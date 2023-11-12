@@ -18,6 +18,6 @@
     "text-to-speech-js": "^1.1.10"
   },
   "scripts": {
-    "start": "server.js"
+    "start": "node server.js"
   }
 }

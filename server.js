@@ -11,7 +11,6 @@ const bcrypt = require("bcryptjs"),
 var http = require("http");
 // Require the upload middleware
 const upload = require('./upload');
-const alarms = require('./alarms');
 
 
 
@@ -22,9 +21,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // (B) USER ACCOUNTS - AT LEAST ENCRYPT YOUR PASSWORDS!
-//bcrypt.hash("KentW2V", 8, (err, hash) => { console.log(hash); });
+//bcrypt.hash("yournewpasswordhere", 8, (err, hash) => { console.log(hash); }); //uncomment this and run your new password then delete the text for your password.
 const users = {
-  "kent@green-create.com": "$2a$08$I1IxxGScFaKYefjeMvXDoOUJXeFdtSXPPKzwTYn3n5zvolT1/oMqi"
+  "web@tx.com": "$2a$08$i5lNfpmd0URaZl/T.xTyd.2TIpj5DSj0k2onlDdSfhHi02C4lIJSe"
 };
 
 // (C) JSON WEB TOKEN

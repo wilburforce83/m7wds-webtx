@@ -62,10 +62,7 @@ async function sendCustomTransmission(TextToSpeak) {
 
     setTimeout(function () {
         // Tx typed message
-        player.play({
-          path: 'chime.wav',
-          sync: true
-        }).then(() => {
+       
           player.play({
             path: TextToSpeak,
             sync: true
@@ -80,8 +77,7 @@ async function sendCustomTransmission(TextToSpeak) {
             console.log('The wav file failed to play.');
             let notification = "Tx NOT sent: "+TextToSpeak;
             console.log(notification)
-          });
-        }).catch((error) => {
+          }).catch((error) => {
           console.error(error);
         });
         
